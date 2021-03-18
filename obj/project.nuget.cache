@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "L9nVR8F4plbxfbIEzPVHZjaDq9/bgcKb4YABKepI07TB+a6c0pdchXWnE6QjKWqe0FD+LFl/JNC226mJGsAtqA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Shams\\source\\repos\\landherosite\\landherosite.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Shams\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
