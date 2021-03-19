@@ -4,7 +4,76 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<link href="@Url.Content("~/lib/bootstrap/dist/css/bootstrap.min.css")" rel="stylesheet" type="text/css" />\
+<link href="@Url.Content("~/css/site.css")" rel="stylesheet" type="text/css" />
+
+<link href="@Url.Content("~/css/sectionone.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/css/backdrop.css")" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="main-page">
+    <div class="card bg-light text-white">
+        <div class="backdrop">
+            <img class="card-img" src="/assets/lawn-backdrop.jpg" alt="Card image">
+        </div>
+        <style>
+
+            .masthead-heading {
+                margin-top: 330px;
+                font-size: 75px;
+                font-family: Verdana;
+                width: 100%;
+                height: auto;
+                flex-wrap: wrap;
+            }
+
+            .masthead-subheading {
+                margin-top: 7px;
+                font-size: 1vw;
+                font-family: Arial;
+                flex-wrap: wrap;
+            }
+        </style>
+        <div class="card-img-overlay">
+            <div class="container d-flex align-items-center flex-column">
+
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Landscape Solutions</h1>
+                <h2 class="masthead-subheading text-uppercase mb-1 ">We have all the services you will ever need!</h2>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <section id="one" class="wrapper style1">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-9">
+                <span class="section-one-image-one"><img class="img-fluid" src="~/assets/lawn-section-one.jpg" alt="" /></span>
+
+            </div>
+            <div id="sec-one-content-one" class="col-lg-5 col-md-9">
+                <h1>Integer vitae libero acrisus egestas placerat</h1>
+                <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
+                <ul class="actions">
+                    <li>
+                        <a href="#" class="button alt">More</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+    <script type="text/javascript" src="~/js/site.js"></script>
 </div>
+
+    

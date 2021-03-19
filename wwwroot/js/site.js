@@ -1,4 +1,9 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿window.onscroll = function () { revealContent() };
 
-// Write your JavaScript code.
+function revealContent() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        document.querySelector(".section-one-image-one").classList.add = "visible";
+    } else {
+        document.querySelector(".section-one-image-one").classList.remove = "visible";
+    }
+}

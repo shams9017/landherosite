@@ -5,30 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - landherosite</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link href="@Url.Content("~/css/site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/css/responsivenavDDL.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/css/sectionone.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/css/backdrop.css")" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">landherosite</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
+        <div class="ml-5">
+            <img id="logo-thumb" src="/assets/images/logo_thumb.png" alt="Logo" />
+        </div>
+        <div class="main-nav">
+            <div class="topnav justify-content-end fixed-top d-inline-flex" id="navbarNav">
+                <a id="port-font" class="btn btn-outline-info border-0" href="#">Home</a>
+                <a id="about-font" class="btn btn-outline-info border-0" href="#">About Me</a>
+                <a id="contact-font" class="btn btn-outline-info border-0" href="#">Services</a>
+                <a id="contact-font" class="btn btn-outline-info border-0" href="#">Contact</a>
+                <div>
+                    <a href="javascript:void(0);" class="icon" onclick="dropDownFromIconClick()">
+                        <i id="resp-navitems" class="fa fa-bars"></i>
+                    </a>
+
                 </div>
             </div>
-        </nav>
+
+
+        </div>
+
     </header>
+    <div id="navitems-dropdown" class="nav-DDL w3-dropdown-content w3-bar-block w3-border">
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -41,10 +53,31 @@
         </div>
     </footer>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="~/js/site.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script>
+        function dropDownFromIconClick() {
+
+            if (document.getElementById("navitems-dropdown").style.display != "block") {
+                document.getElementById("navitems-dropdown").style.display = "block";
+                $('#navitems-dropdown').css({ 'margin-left': '300px' });
+                $('#navitems-dropdown').css({ 'margin-top': '30px' });
+                $('#navitems-dropdown').addClass('visible');
+                
+            }
+            else if (document.getElementById("navitems-dropdown").style.display != "none") {
+                document.getElementById("navitems-dropdown").style.display = "none";
+                $('#navitems-dropdown').removeClass('visible');
+            }
+
+        }
+    </script>
+
 
     @await RenderSectionAsync("Scripts", required: false)
+
+
 </body>
 </html>

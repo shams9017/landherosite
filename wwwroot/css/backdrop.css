@@ -1,0 +1,79 @@
+﻿
+.backdrop {
+
+    overflow: hidden;
+    margin: 0;
+}
+
+
+
+.backdrop img {
+    animation: fadeIn ease 2s !important;
+    -webkit-animation: fadeIn ease 2s !important;
+    -moz-animation: fadeIn ease 2s !important;
+    -o-animation: fadeIn ease 2s !important;
+    -ms-animation: fadeIn ease 2s !important;
+    filter: brightness(50%);
+    margin: -7.0% 0;
+    min-height: 400px;
+    width: 100%;
+    height: auto;
+ 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+

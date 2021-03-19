@@ -1,0 +1,16 @@
+﻿.section-one-image-one img {
+    width: 337px;
+    height: 500px;
+    float: right;
+    overflow: hidden;
+}
+
+#one {
+    margin-top: 50px;
+}
+
+#sec-one-content-one p, h1 {
+    word-wrap: break-word;
+    width: 400px;
+}
+
